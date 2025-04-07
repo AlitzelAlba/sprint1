@@ -1,0 +1,17 @@
+.nav{
+    background-color: #b00089;
+}
+.btn{
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+.barra{
+    text-align: center;
+}
