@@ -4,7 +4,7 @@
 Se intenta plasmar una plataforma de striming para ver caricturas clásicas, donde se pueda interactuar con la barra de tareas, es específico en el apartado de género, ya que este boton despliega un menú del cual se puede elegir un género, donde despues de elegirlo abre la pestaña donde se encuentran las caricaturas rceferentes al genero.
 
 # 2. Objetivo
-
+El objetivo de esta actividad es el desarrollar una plataforma de streaming interactiva donde los usurios puedan navegar entre generos, esto mediante el almacenamiento de los datos en archivos json. De igual forma, se tiene como objetivo el usar rxjs y prubas unitarias para asegurar el rendmiento y estabilidad. Por utimo, realizar el testing y prubas de code coverage para lograr un 50% en el proyecto.
 # 3. Mockup de la aplicación
 ![image](https://github.com/user-attachments/assets/366a22b8-1157-4c57-8dbc-623dc75f7552)
 
@@ -26,8 +26,28 @@ La pagina se adapta al tamaño de la pantalla, según sea el caso.
 ![image](https://github.com/user-attachments/assets/0d7a1084-a3a8-4697-871c-9d932ee2a4f1)
 
 # 6. Instrucciones para instalar y usar el repo
+1. Verificar si se tiene git instalado
+   Abre la terminal en tu dispositivo e ingresa el siguiente comando
+   git --version
+   Si te regresa una versión como git version 2.40.1, significa que ya lo tienes. Si te dice que el comando no se reconoce, entonces necesitas instalarlo.
+2. Copia la URL del repositorio que se quiere clonar.
+3. Ya que tienes la URL, abre la terminal y clona el repositorio con el siguiente comando git clone anexa la url del repositorio. Con esto git va a empezar a descargar todo el contenido del repositorio en una carpeta con el mismo nombre. Git lo genera en automatico.
+4. Cuando termine de clonar, cambia de directorio con el siguiente comando: cd nombre-del-repositorio. Aquí es donde vas a trabajar todo el tiempo. Siempre que vayas a hacer git status, git pull, git commit o cualquier otro comando, asegúrate de estar dentro de esta carpeta.
+5. Por ultimo, para asegurarte que se clonó bien ejecuta git status
 
 # 7. Dependencias o bibliotecas utilizadas
+@angular/*: Todos los módulos principales de Angular.
+bootstrap: Para el diseño y estilos CSS.
+express: Usado probablemente para el server-side rendering (SSR) con Angular Universal.
+rxjs: Para programación reactiva en Angular.
+zone.js: Angular lo usa para detectar cambios.
+tslib: Soporte para TypeScript.
+
+@angular/cli, @angular-devkit/build-angular: Herramientas para compilar, servir y crear proyectos Angular.
+jasmine, karma, @types/*: Librerías y tipados para pruebas unitarias.
+typescript: El compilador TS que Angular necesita para funcionar.
+@types/node, @types/express: Tipados de TypeScript para que el editor/autocompletado funcione
+bien al escribir código de servidor.
 
 # 8. Descripción del como se realizo
 
