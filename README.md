@@ -1,6 +1,6 @@
 # sprint3 - Caricaturas clásicas
 # Verenice Alitzel Alba Hernandez
-# 1. Descripción
+# 1. Descripción 
 Se intenta plasmar una plataforma de striming para ver caricturas clásicas, donde se pueda interactuar con la barra de tareas, es específico en el apartado de género, ya que este boton despliega un menú del cual se puede elegir un género, donde despues de elegirlo abre la pestaña donde se encuentran las caricaturas rceferentes al genero.
 
 # 2. Objetivo
