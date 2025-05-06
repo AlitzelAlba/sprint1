@@ -1,29 +1,27 @@
 # sprint3 - Caricaturas clásicas
 # Verenice Alitzel Alba Hernandez
 # 1. Descripción 
-Se intenta plasmar una plataforma de striming para ver caricturas clásicas, donde se pueda interactuar con la barra de tareas, es específico en el apartado de género, ya que este boton despliega un menú del cual se puede elegir un género, donde despues de elegirlo abre la pestaña donde se encuentran las caricaturas rceferentes al genero.
+Este proyecto busca simular una plataforma de *streaming* para visualizar caricaturas clásicas. El enfoque principal está en la interacción mediante una barra de navegación, en particular en el apartado de géneros. Al seleccionar un género desde el menú desplegable, se redirige al usuario a una vista donde se muestran caricaturas pertenecientes a dicha categoría.
 
 # 2. Objetivo
-El objetivo de esta actividad es el desarrollar una plataforma de streaming interactiva donde los usurios puedan navegar entre generos, esto mediante el almacenamiento de los datos en archivos json. De igual forma, se tiene como objetivo el usar rxjs y prubas unitarias para asegurar el rendmiento y estabilidad. Por utimo, realizar el testing y prubas de code coverage para lograr un 50% en el proyecto.
+El objetivo de esta actividad es desarrollar una plataforma interactiva para el consumo de caricaturas clásicas, que permita la navegación por géneros a través de una estructura basada en archivos JSON. Adicionalmente, se busca integrar `RxJS` y realizar pruebas unitarias para asegurar un rendimiento adecuado y estabilidad en el código. Finalmente, se deben ejecutar pruebas de cobertura para alcanzar al menos un 50% de *code coverage*.
+
 # 3. Mockup de la aplicación
 ![image](https://github.com/user-attachments/assets/366a22b8-1157-4c57-8dbc-623dc75f7552)
 
 # 5. Proyecto en ejecución
-Imagen de la pantalla inicial, se encuentra una barra de tareas.
-![image](https://github.com/user-attachments/assets/2ab36a7f-e64a-445a-b77b-ce250194fe3a)
+Pantalla inicial con barra de tareas:  
+![Pantalla inicial](https://github.com/user-attachments/assets/2ab36a7f-e64a-445a-b77b-ce250194fe3a)
 
-El boton de genero despliega un menú de seleccion.
-![image](https://github.com/user-attachments/assets/976af056-6c77-40c9-b47d-cf65d0f0d57a)
+Menú desplegable al presionar el botón de géneros:  
+![Menú de géneros](https://github.com/user-attachments/assets/976af056-6c77-40c9-b47d-cf65d0f0d57a)
 
-Al seleccionar alguno de los dos generos este debera redireccionarte a la pagina con el genero correspondiente
-En la siguiente imagen solo se mostrara un anuncio en pantalla ya que aun no logro enlazar el json de forma correcta, pero si se puede ver en el url que se hace la busqueda.
-![image](https://github.com/user-attachments/assets/c87087ab-7bbe-4890-9004-9ddf2642f4d3)
+Redirección según el género seleccionado (aunque aún no se carga el JSON correctamente):  
+![Redirección 1](https://github.com/user-attachments/assets/c87087ab-7bbe-4890-9004-9ddf2642f4d3)  
+![Redirección 2](https://github.com/user-attachments/assets/d08e4507-c895-4ae8-9bbc-17989ccfe94c)
 
-De igual forma pasa lo mismo con el segundo género.
-![image](https://github.com/user-attachments/assets/d08e4507-c895-4ae8-9bbc-17989ccfe94c)
-
-La pagina se adapta al tamaño de la pantalla, según sea el caso.
-![image](https://github.com/user-attachments/assets/0d7a1084-a3a8-4697-871c-9d932ee2a4f1)
+El diseño es adaptable a diferentes tamaños de pantalla:  
+![Responsive](https://github.com/user-attachments/assets/0d7a1084-a3a8-4697-871c-9d932ee2a4f1)
 
 # 6. Instrucciones para instalar y usar el repo
 1. Verificar si se tiene git instalado
@@ -50,7 +48,9 @@ typescript: El compilador TS que Angular necesita para funcionar.
 bien al escribir código de servidor.
 
 # 8. Descripción del como se realizo
-
+Este proyecto es el resultado de la migración de un sitio web estático (hecho con HTML, CSS y JavaScript puro) a Angular usando la arquitectura standalone. Se creó una nueva estructura en Angular donde cada funcionalidad fue separada en componentes como generos-pelicula, lista-peliculas y search-pelicula.
+Para lograr la interacción dinámica con archivos JSON como lo son 1_comedia.json, 2_superHeroes.json, se usó el servicio TmdbService que realiza peticiones HTTP hacia los archivos ubicados en la carpeta assets. Además, se configuraron rutas dinámicas utilizando ActivatedRoute para capturar parámetros desde la URL, permitiendo mostrar diferentes géneros de caricaturas según la selección del usuario.
+El sistema de navegación fue rediseñado utilizando RouterModule y rutas tipo /listapeliculas/:archivo, y todo el proyecto se adaptó a la estructura modular standalone.
 # 9. Reporte de Code Coverage y reporte de testing
 ![image](https://github.com/user-attachments/assets/6e4b0a7a-e6eb-4161-bab3-c9bbdb08e314)
 ![image](https://github.com/user-attachments/assets/0a492545-ddbe-4ed3-be3e-a66d7ed8b84a)
@@ -127,8 +127,9 @@ Lines        : 42.3% ( 11/26 )
 
 
 # 10. Problemas conocidos
-Practicmaente el enlace de jason con lista peliculas esta bien, aunque no logro que este los refleje directamente en el sitio.
-En esta ocasión tuve dificultades con git al momento de hacer commit y querer actualizar los cambios para subir a git, de alguna forma algo hice mal que aun no entiendo como es y en algun punto me encima cambios en diferentes ramas, o al menos eso es lo que indican los errores
+La integración de los archivos JSON aún no refleja contenido en la vista, aunque el fetch se realiza correctamente.
+Al trabajar con Git, surgieron confusiones entre ramas y conflictos al hacer commits y push, lo que llevó a errores que no supe corregir en su momento.
+Las pruebas unitarias fallan por configuraciones pendientes en ActivatedRoute y el uso de rutas dinámicas.
 # 11. Retrospectiva
 ¿Que hice bien?
 
