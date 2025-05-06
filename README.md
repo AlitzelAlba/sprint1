@@ -11,13 +11,17 @@ Se intenta plasmar una plataforma de striming para ver caricturas clásicas, don
 # 5. Proyecto en ejecución
 Imagen de la pantalla inicial, se encuentra una barra de tareas.
 ![image](https://github.com/user-attachments/assets/2ab36a7f-e64a-445a-b77b-ce250194fe3a)
+
 El boton de genero despliega un menú de seleccion.
 ![image](https://github.com/user-attachments/assets/976af056-6c77-40c9-b47d-cf65d0f0d57a)
+
 Al seleccionar alguno de los dos generos este debera redireccionarte a la pagina con el genero correspondiente
 En la siguiente imagen solo se mostrara un anuncio en pantalla ya que aun no logro enlazar el json de forma correcta, pero si se puede ver en el url que se hace la busqueda.
 ![image](https://github.com/user-attachments/assets/c87087ab-7bbe-4890-9004-9ddf2642f4d3)
+
 De igual forma pasa lo mismo con el segundo género.
 ![image](https://github.com/user-attachments/assets/d08e4507-c895-4ae8-9bbc-17989ccfe94c)
+
 La pagina se adapta al tamaño de la pantalla, según sea el caso.
 ![image](https://github.com/user-attachments/assets/0d7a1084-a3a8-4697-871c-9d932ee2a4f1)
 
