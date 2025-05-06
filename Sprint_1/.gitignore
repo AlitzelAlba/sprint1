@@ -44,5 +44,4 @@ Thumbs.db
 #Package lock
 package-lock.json
 
-#bootstrap
-node_modules\boostrap
+
