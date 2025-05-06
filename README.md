@@ -132,8 +132,15 @@ Al trabajar con Git, surgieron confusiones entre ramas y conflictos al hacer com
 Las pruebas unitarias fallan por configuraciones pendientes en ActivatedRoute y el uso de rutas dinámicas.
 # 11. Retrospectiva
 ¿Que hice bien?
-
+Logré migrar un proyecto web a Angular utilizando componentes standalone.
+Implementé la navegación dinámica mediante rutas con parámetros.
+Separé las funciones en componentes reutilizables, para mejorar la organización del código.
+Implementacio y uso de servicios HttpClient y el acceso a datos externos mediante JSON.
 ¿Qué no salio bien?
-
+No logré que el contenido de los archivos JSON se mostrara correctamente en pantalla, a pesar de que las rutas funcionan.
+No terminé de configurar correctamente algunas partes del entorno como pruebas unitarias o rutas mal construidas.
 ¿Qué puedo hacer diferente?
-      
+Planificar mejor la estructura del proyecto antes de comenzar a migrar.
+Verificar cada etapa de forma modular y hacer pruebas unitarias pequeñas para no acumular errores.
+Mejorar el control de versiones en Git.
+
