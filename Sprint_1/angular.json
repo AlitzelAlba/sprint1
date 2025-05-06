@@ -90,18 +90,20 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/assets",
+              "src/favicon.ico"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+            "Sprint_/node_modules/bootstrap/dist/css/bootstrap-grid.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "Sprint_1/node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+            ]
           }
         }
       }
     }
   }
 }
+

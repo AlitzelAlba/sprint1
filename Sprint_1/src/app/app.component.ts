@@ -13,4 +13,6 @@ import { SearchPeliculaComponent } from './search-pelicula/search-pelicula.compo
 })
 export class AppComponent {
   title = 'Sprint_1';
+
+  
 }
