@@ -16,7 +16,11 @@ Se intenta plasmar una plataforma de striming para ver caricturas clásicas, don
 
 # 8. DEscripción del como se realizo
 
-# 9. Retrospectiva
+# 9. Reporte de Code Coverage y reporte de testing
+
+# 10. Problemas conocidos
+
+# 11. Retrospectiva
 ¿Que hice bien?
 
 ¿Qué no salio bien?
