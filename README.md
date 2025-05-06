@@ -107,7 +107,8 @@ Lines        : 42.3% ( 11/26 )
 
 
 # 10. Problemas conocidos
-
+Practicmaente el enlace de jason con lista peliculas esta bien, aunque no logro que este los refleje directamente en el sitio.
+En esta ocasión tuve dificultades con git al momento de hacer commit y querer actualizar los cambios para subir a git, de alguna forma algo hice mal que aun no entiendo como es y en algun punto me encima cambios en diferentes ramas, o al menos eso es lo que indican los errores
 # 11. Retrospectiva
 ¿Que hice bien?
 
