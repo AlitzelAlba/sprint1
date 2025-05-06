@@ -22,20 +22,20 @@ export class ListaPeliculasComponentComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       this.archivoSeleccionado = params.get('archivo');
-      console.log('✅ Archivo seleccionado desde la URL:', this.archivoSeleccionado);
+      console.log('Archivo seleccionado desde la URL:', this.archivoSeleccionado);
 
       if (this.archivoSeleccionado) {
         this.tmdbService.getPeliculas(this.archivoSeleccionado).subscribe({
           next: (data: any) => {
-            console.log('📦 Datos recibidos del json:', data);
+            console.log('Datos recibidos del json:', data);
             this.peliculas = data?.data || [];
           },
           error: (error) => {
-            console.error('❌ Error al cargar el archivo json:', error);
+            console.error('Error al cargar el archivo json:', error);
           }
         });
       } else {
-        console.warn('⚠️ No se proporcionó archivo en la URL.');
+        console.warn(' No se proporcionó archivo en la URL.');
       }
     });
   }
